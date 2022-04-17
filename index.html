@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dale's Making a List</title>
+</head>
+<body>
+<script>
+    let newHeader = document.createElement("header");
+    newHeader.textContent = "Indiana Spring Weeds";
+    document.body.append(newHeader);
+    newHeader.style.height = "100px";
+    newHeader.style.backgroundColor = "#679AF0";
+    newHeader.style.borderRadius = "15px";
+    newHeader.style.lineHeight = "100px";
+    newHeader.style.textAlign = "center";
+    newHeader.style.fontSize = "225%";
+    newHeader.style.fontFamily = "Arial Black";
+    newHeader.style.color = "#1AF07E";
+
+    let newParagraph = document.createElement("p");
+    newParagraph.textContent = "Flowers return to Indiana during the Springtime after a long absence during the Fall" +
+        " and Winter seasons. As the flowers return, they bring with them the annual guessing game of: Weed or Flower." +
+        " I rarely can tell the difference and often find myself admiring a weed."
+    document.body.append(newParagraph);
+    newParagraph.style.width = "800px";
+    newParagraph.style.margin = "auto";
+    newParagraph.style.marginTop = "20px";
+
+
+    let list = document.createElement("ul");
+    list.style.width = "500px";
+    list.style.margin = "auto";
+    list.style.padding = "10px";
+    list.style.lineHeight = "150%";
+    list.style.marginTop = "10px";
+
+    let item = document.createElement("li");
+    item.style.marginBottom = "10px";
+    item.textContent = "Dandelion, or more commonly known as Taraxacum. A member of the daisy family and contains a decent amount of protein.";
+    list.append(item);
+
+    item = document.createElement("li");
+    item.style.marginBottom = "10px";
+    item.textContent = "Poison Hemlock. Very toxic. Has white flowers and can often be found along roadsides, fence lines and creek beds.";
+    list.append(item);
+
+    item = document.createElement("li");
+    item.style.marginBottom = "10px";
+    item.textContent = "Wild Violets. According to Purdue's Horticulture Department, people often refer to Wild Violets as a singular species, but actually comprise three separate, similar species."
+    list.append(item);
+
+    document.body.append(list);
+
+</script>
+</body>
+</html>
